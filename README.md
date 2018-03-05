@@ -1,2 +1,2 @@
 # ocmp
-Open-source custom messaging protocols
+Open-source Custom Messaging Platform

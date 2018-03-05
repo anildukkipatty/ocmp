@@ -1,0 +1,5 @@
+node_modules/
+config.json
+public/dist/app.js
+package-lock.json
+.DS_Store

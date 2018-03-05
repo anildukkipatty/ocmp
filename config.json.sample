@@ -1,0 +1,7 @@
+{
+    "mongo": {
+        "host": "mongodb://localhost/ocmp"
+    },
+    "secret": "heyhey",
+    "env": "dev"
+}

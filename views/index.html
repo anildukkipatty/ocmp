@@ -1,0 +1,79 @@
+{% extends "layouts/master.html" %}
+
+{% block content %}
+<div ng-controller="DashboardCtrl">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="mini-stat clearfix">
+        <span class="mini-stat-icon green"><i class="fa fa-users"></i></span>
+        <div class="mini-stat-info">
+          <h4>{{meta.users}} Users</h4>
+          <a href="/usersnode">view users</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="mini-stat clearfix">
+        <span class="mini-stat-icon tar"><i class="fa fa-envelope"></i></span>
+        <div class="mini-stat-info">
+          <h4>{{meta.messages}} Messages</h4>
+          <a href="/messages">view messages</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block javascript %}
+  <style>
+    .spinner-an {
+      -webkit-animation-name: spin;
+      -webkit-animation-duration: 4000ms;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -moz-animation-name: spin;
+      -moz-animation-duration: 4000ms;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+      -ms-animation-name: spin;
+      -ms-animation-duration: 4000ms;
+      -ms-animation-iteration-count: infinite;
+      -ms-animation-timing-function: linear;
+
+      animation-name: spin;
+      animation-duration: 4000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    @-ms-keyframes spin {
+        from { -ms-transform: rotate(0deg); }
+        to { -ms-transform: rotate(360deg); }
+    }
+    @-moz-keyframes spin {
+        from { -moz-transform: rotate(0deg); }
+        to { -moz-transform: rotate(360deg); }
+    }
+    @-webkit-keyframes spin {
+        from { -webkit-transform: rotate(0deg); }
+        to { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spin {
+        from {
+            transform:rotate(0deg);
+        }
+        to {
+            transform:rotate(360deg);
+        }
+    }
+  </style>
+  <script>
+    var me = {}
+  </script>
+  <script>
+    var configServer = {}
+  </script>
+  <script>
+    $('#navDashboard').addClass('active');
+  </script>
+{% endblock %}
